@@ -27,79 +27,101 @@ def statesGuess():
     if userInput == "1":
         userInput = selections[0]
     elif userInput == "2":
-        userInput = selections[1]
+        userInput = selections[1] 
     while userInput not in states.keys():                               #check that input is valid
         print("Input not recognized, please input again:")
         userInput = input("")
         userInput = userInput.title()
+    correctAnswer = grade_date(selections[0], selections[1]);
+    if userInput.lower() == correctAnswer.lower():
+        print("Correct")
 
-    if userInput.lower() == selections[0].lower(): #if user is first input
-        if states[userInput][6:10] == states[selections[1]][6:10]: #if userInputYear < otherItemYear (checks if same year)
-            if states[userInput][3:5] == states[selections[1]][3:5]: #if userInputMonth == otherInputMonth (checks if same month)
-                if states[userInput][0:2] < states[selections[1]][0:2]:
-                    print("Correct!")
-                    printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
-                    print(printString)
-                    statesGuess()
-                else:
-                    print("Incorrect!")
-                    printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
-                    print(printString)
-                    statesGuess()
-            elif states[userInput][3:5] < states[selections[1]][3:5]: #if userInputMonth < otherItemMonth
-                print("Correct!")
-                printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
-                print(printString)
-                statesGuess()
-            else:
-                print("Incorrect!")
-                printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
-                print(printString)
-                statesGuess()
-        elif states[userInput][6:10] < states[selections[1]][6:10]: #if userInputYear < otherItemYear
-            print("Correct!")
-            printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
-            print(printString)
-            statesGuess()
-        else:
-            print("Incorrect!")
-            printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
-            print(printString)
-            statesGuess()
+    # if userInput.lower() == selections[0].lower(): #if user is first input
+    #     if states[userInput][6:10] == states[selections[1]][6:10]: #if userInputYear < otherItemYear (checks if same year)
+    #         if states[userInput][3:5] == states[selections[1]][3:5]: #if userInputMonth == otherInputMonth (checks if same month)
+    #             if states[userInput][0:2] < states[selections[1]][0:2]:
+    #                 print("Correct!")
+    #                 printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
+    #                 print(printString)
+    #                 statesGuess()
+    #             else:
+    #                 print("Incorrect!")
+    #                 printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
+    #                 print(printString)
+    #                 statesGuess()
+    #         elif states[userInput][3:5] < states[selections[1]][3:5]: #if userInputMonth < otherItemMonth
+    #             print("Correct!")
+    #             printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
+    #             print(printString)
+    #             statesGuess()
+    #         else:
+    #             print("Incorrect!")
+    #             printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
+    #             print(printString)
+    #             statesGuess()
+    #     elif states[userInput][6:10] < states[selections[1]][6:10]: #if userInputYear < otherItemYear
+    #         print("Correct!")
+    #         printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
+    #         print(printString)
+    #         statesGuess()
+    #     else:
+    #         print("Incorrect!")
+    #         printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
+    #         print(printString)
+    #         statesGuess()
 
-    elif userInput.lower() == selections[1].lower(): #if user is second input
-        if states[userInput][6:10] == states[selections[0]][6:10]: #if userInputYear < otherItemYear (checks if same year)
-            if states[userInput][3:5] == states[selections[0]][3:5]: #if userInputMonth == otherInputMonth (checks if same month)
-                if states[userInput][0:2] < states[selections[0]][0:2]:
-                    print("Correct!")
-                    printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
-                    print(printString)
-                    statesGuess()
-                else:
-                    print("Incorrect!")
-                    printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
-                    print(printString)
-                    statesGuess()
-            elif states[userInput][3:5] < states[selections[0]][3:5]: #if userInputMonth < otherItemMonth
-                print("Correct!")
-                printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
-                print(printString)
-                statesGuess()
+    # elif userInput.lower() == selections[1].lower(): #if user is second input
+    #     if states[userInput][6:10] == states[selections[0]][6:10]: #if userInputYear < otherItemYear (checks if same year)
+    #         if states[userInput][3:5] == states[selections[0]][3:5]: #if userInputMonth == otherInputMonth (checks if same month)
+    #             if states[userInput][0:2] < states[selections[0]][0:2]:
+    #                 print("Correct!")
+    #                 printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
+    #                 print(printString)
+    #                 statesGuess()
+    #             else:
+    #                 print("Incorrect!")
+    #                 printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
+    #                 print(printString)
+    #                 statesGuess()
+    #         elif states[userInput][3:5] < states[selections[0]][3:5]: #if userInputMonth < otherItemMonth
+    #             print("Correct!")
+    #             printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
+    #             print(printString)
+    #             statesGuess()
+    #         else:
+    #             print("Incorrect!")
+    #             printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
+    #             print(printString)
+    #             statesGuess()
+    #     elif states[userInput][6:10] < states[selections[0]][6:10]: #if userInputYear < otherItemYear
+    #         print("Correct!")
+    #         printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
+    #         print(printString)
+    #         statesGuess()
+    #     else:
+    #         print("Incorrect!")
+    #         printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
+    #         print(printString)
+    #         statesGuess()
+
+def grade_date(firstDate, secondDate):
+    if firstDate[6:10] == secondDate[6:10]:
+        if firstDate[3:5] == secondDate[3:5]:
+            if firstDate[0:2] == secondDate[0:2]:
+                return None;
+            elif firstDate[0:2] > secondDate[0:2]:
+                return firstDate;
             else:
-                print("Incorrect!")
-                printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
-                print(printString)
-                statesGuess()
-        elif states[userInput][6:10] < states[selections[0]][6:10]: #if userInputYear < otherItemYear
-            print("Correct!")
-            printString = selections[1] + "(" + states[selections[1]] + ") is older than " + selections[0] + "(" + states[selections[0]] + ")"
-            print(printString)
-            statesGuess()
+                return secondDate;
+        elif firstDate[3:5] > secondDate[3:5]:
+            return firstDate;
         else:
-            print("Incorrect!")
-            printString = selections[0] + "(" + states[selections[0]] + ") is older than " + selections[1] + "(" + states[selections[1]] + ")"
-            print(printString)
-            statesGuess()
+            return secondDate;
+    elif firstDate[6:10] > secondDate[6:10]:
+        return firstDate;
+    else:
+        return secondDate;
+
                 
                 
 
