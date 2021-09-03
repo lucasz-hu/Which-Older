@@ -1,0 +1,402 @@
+{
+    "Delaware": {
+        "name": "Delaware",
+        "day": 7,
+        "month": 12,
+        "year": 1787,
+        "dateSource": "https://legis.delaware.gov/Resources/History",
+        "imgSource": "https://viola.delaware.gov/files/2017/06/de-largeflag-300x200.png"
+    },
+    "Pennsylvania": {
+        "name": "Pennsylvania",
+        "day": 12,
+        "month": 12,
+        "year": 1787,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "New Jersey": {
+        "name": "New Jersey",
+        "day": 18,
+        "month": 12,
+        "year": 1787,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Georgia": {
+        "name": "Georgia",
+        "day": 2,
+        "month": 1,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Connecticut": {
+        "name": "Connecticut",
+        "day": 9,
+        "month": 1,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Massachusetts": {
+        "name": "Massachusetts",
+        "day": 6,
+        "month": 2,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Maryland": {
+        "name": "Maryland",
+        "day": 28,
+        "month": 4,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "South Carolina": {
+        "name": "South Carolina",
+        "day": 23,
+        "month": 5,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "New Hampshire": {
+        "name": "New Hampshire",
+        "day": 21,
+        "month": 6,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Virginia": {
+        "name": "Virginia",
+        "day": 25,
+        "month": 6,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "New York": {
+        "name": "New York",
+        "day": 26,
+        "month": 7,
+        "year": 1788,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "North Carolina": {
+        "name": "North Carolina",
+        "day": 21,
+        "month": 11,
+        "year": 1789,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Rhode Island": {
+        "name": "Rhode Island",
+        "day": 29,
+        "month": 5,
+        "year": 1790,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Vermont": {
+        "name": "Vermont",
+        "day": 4,
+        "month": 3,
+        "year": 1791,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Kentucky": {
+        "name": "Kentucky",
+        "day": 1,
+        "month": 6,
+        "year": 1792,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Tennessee": {
+        "name": "Tennessee",
+        "day": 1,
+        "month": 6,
+        "year": 1796,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Ohio": {
+        "name": "Ohio",
+        "day": 1,
+        "month": 3,
+        "year": 1803,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Louisiana": {
+        "name": "Louisiana",
+        "day": 30,
+        "month": 4,
+        "year": 1812,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Indiana": {
+        "name": "Indiana",
+        "day": 11,
+        "month": 12,
+        "year": 1816,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Mississippi": {
+        "name": "Mississippi",
+        "day": 10,
+        "month": 12,
+        "year": 1817,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Illinois": {
+        "name": "Illinois",
+        "day": 3,
+        "month": 12,
+        "year": 1818,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Alabama": {
+        "name": "Alabama",
+        "day": 14,
+        "month": 12,
+        "year": 1819,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Maine": {
+        "name": "Maine",
+        "day": 15,
+        "month": 3,
+        "year": 1820,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Missouri": {
+        "name": "Missouri",
+        "day": 10,
+        "month": 8,
+        "year": 1821,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Arkansas": {
+        "name": "Arkansas",
+        "day": 15,
+        "month": 6,
+        "year": 1836,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Michigan": {
+        "name": "Michigan",
+        "day": 26,
+        "month": 1,
+        "year": 1837,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Florida": {
+        "name": "Florida",
+        "day": 3,
+        "month": 3,
+        "year": 1845,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Texas": {
+        "name": "Texas",
+        "day": 29,
+        "month": 12,
+        "year": 1845,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Iowa": {
+        "name": "Iowa",
+        "day": 28,
+        "month": 12,
+        "year": 1846,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Wisconsin": {
+        "name": "Wisconsin",
+        "day": 29,
+        "month": 5,
+        "year": 1848,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "California": {
+        "name": "California",
+        "day": 9,
+        "month": 9,
+        "year": 1850,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Minnesota": {
+        "name": "Minnesota",
+        "day": 11,
+        "month": 6,
+        "year": 1858,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Oregon": {
+        "name": "Oregon",
+        "day": 14,
+        "month": 2,
+        "year": 1859,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Kansas": {
+        "name": "Kansas",
+        "day": 29,
+        "month": 1,
+        "year": 1861,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "West Virginia": {
+        "name": "West Virginia",
+        "day": 20,
+        "month": 6,
+        "year": 1863,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Nevada": {
+        "name": "Nevada",
+        "day": 31,
+        "month": 10,
+        "year": 1864,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Nebraska": {
+        "name": "Nebraska",
+        "day": 1,
+        "month": 3,
+        "year": 1867,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Colorado": {
+        "name": "Colorado",
+        "day": 1,
+        "month": 8,
+        "year": 1876,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "North Dakota": {
+        "name": "North Dakota",
+        "day": 2,
+        "month": 11,
+        "year": 1889,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "South Dakota": {
+        "name": "South Dakota",
+        "day": 2,
+        "month": 11,
+        "year": 1889,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Montana": {
+        "name": "Montana",
+        "day": 8,
+        "month": 11,
+        "year": 1889,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Washington": {
+        "name": "Washington",
+        "day": 11,
+        "month": 11,
+        "year": 1889,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Idaho": {
+        "name": "Idaho",
+        "day": 3,
+        "month": 7,
+        "year": 1890,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Wyoming": {
+        "name": "Wyoming",
+        "day": 10,
+        "month": 7,
+        "year": 1890,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Utah": {
+        "name": "Utah",
+        "day": 4,
+        "month": 1,
+        "year": 1896,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Oklahoma": {
+        "name": "Oklahoma",
+        "day": 16,
+        "month": 11,
+        "year": 1907,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "New Mexico": {
+        "name": "New Mexico",
+        "day": 6,
+        "month": 1,
+        "year": 1912,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Arizona": {
+        "name": "Arizona",
+        "day": 14,
+        "month": 2,
+        "year": 1912,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Alaska": {
+        "name": "Alaska",
+        "day": 3,
+        "month": 1,
+        "year": 1959,
+        "dateSource": "",
+        "imgSource": ""
+    },
+    "Hawaii": {
+        "name": "Hawaii",
+        "day": 21,
+        "month": 8,
+        "year": 1959,
+        "dateSource": "",
+        "imgSource": ""
+    }
+}

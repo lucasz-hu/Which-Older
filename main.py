@@ -1,20 +1,36 @@
 import random
-import historicalObject
+from historicalObject import historicalObject
+import json
 
-#dates are stored [Day] [Month] [+/-Year] with leading 0s EX: 04/07/+1774 is July 4th 1774. 01/02/-103 is February 2nd 103BC
-states = {"Delaware": "07/12/+1787","Pennsylvania": "12/12/+1787","New Jersey": "18/12/+1787","Georgia":"02/01/+1788","Connecticut":"09/01/+1788","Maryland":"28/04/+1788","South Carolina":"23/05/+1788","New Hampshire":"21/06/+1788",
-"Virginia":"25/06/+1788","New York":"26/07/+1788","North Carolina":"21/11/+1789","Rhode Island":"29/05/+1790","Vermont":"04/03/+1791","Kentucky":"01/06/+1792","Tennessee":"01/06/+1796","Ohio":"01/03/+1803","Louisiana":"30/04/+1812",
-"Indiana":"11/12/+1816","Mississippi":"10/12/+1817","Illinois":"03/12/+1818","Alabama":"14/12/+1819","Maine":"15/03/+1820","Missouri":"10/08/+1821","Arkansas":"15/06/+1836","Michigan":"26/01/+1837","Florida":"03/03/+1845",
-"Texas":"29/12/+1845","Iowa":"28/12/+1846","Wisconsin":"29/05/+1848","California":"09/09/+1850","Minnesota":"11/06/+1858","Oregon":"14/02/+1859","Kansas":"29/01/+1861","West Virginia":"20/06/+1863","Nevada":"31/10/+1864",
-"Nebraska":"01/03/+1867","Colorado":"01/08/+1876","North Dakota":"02/11/+1889","South Dakota":"02/11/+1889","Montana":"08/11/+1889","Washington":"11/11/+1889","Idaho":"03/07/+1890","Wyoming":"10/07/+1890","Utah":"04/01/+1896",
-"Oklahoma":"16/11/+1907","New Mexico":"06/01/+1912","Arizona":"14/02/+1912","Alaska":"03/01/+1959","Hawaii":"21/08/+1959"}
+mode = 'countries.json'
+'''mode = whichever json data to use'''
 
 months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 def main():
-    print("Welcome to the historical over-under guessing game!")
-    print("The objective is to guess which item is older?")
-    states_guess()
+    # print("Welcome to the historical over-under guessing game!")
+    # print("The objective is to guess which item is older?")
+    # states_guess()
+    # state = historicalObject("Pennsylvania", 12, 12, -1787, "dateSource", "imgSource")
+    # print(state)
+    print(load_random_object_from_data(mode))
+
+def load_data(jsonFile):
+    '''This will load all data of a json file into data'''
+    with open(jsonFile) as f:
+        jsonDataSet = json.load(f)
+    for jsonData in jsonDataSet:
+        data.append(historicalObject(**jsonDataSet[jsonData]))
+    return None
+
+def load_random_object_from_data(jsonFile):
+    '''goes into json file and randomly selects an object, then returns it as a historicalObject'''
+    with open(jsonFile) as f:
+        jsonData = json.load(f)
+        keys = jsonData.keys()
+        jsonKey = random.choice(list(keys))
+        return historicalObject(**jsonData[jsonKey])
+
 
 def states_guess():
     score = 0;
